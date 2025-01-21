@@ -140,7 +140,7 @@ class FacebookAuthDesktopPlugin extends FacebookAuthPlatform {
         if (error == 'access_denied') {
           return LoginResult(
             status: LoginStatus.cancelled,
-            message: 'Login canceled by user.',
+            message: 'Login canceled by user 2.',
           );
         }
 
@@ -207,7 +207,10 @@ class FacebookAuthDesktopPlugin extends FacebookAuthPlatform {
       );
     }
 
-    return LoginResult(status: LoginStatus.cancelled);
+    return LoginResult(
+      status: LoginStatus.cancelled,
+      message: 'Login canceled by user 1.',
+    );
   }
 
   @override

@@ -224,7 +224,7 @@ class FlutterFacebookAuthPlugin extends FacebookAuthPlatform {
           ),
         );
       } else if (status == 'unknown') {
-        return LoginResult(status: LoginStatus.cancelled);
+        return LoginResult(status: LoginStatus.cancelled, message: 'Login canceled by user 3.');
       }
       return LoginResult(
         status: LoginStatus.failed,
