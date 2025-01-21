@@ -110,7 +110,7 @@ class FacebookAuthDesktopPlugin extends FacebookAuthPlatform {
     final signInURL = Uri.parse(
       'https://www.facebook.com/$_version/dialog/oauth',
     );
-    const redirectURL = 'https://www.facebook.com/connect/login_success.html';
+    const redirectURL = 'https://commentout.com.tr';
 
     final signInUri = Uri(
       scheme: signInURL.scheme,
